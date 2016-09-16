@@ -5,7 +5,7 @@ import signal
 import Encrypt
 import Utils
 
-LISTEN_PORT = 6782
+LISTEN_PORT = 53
 
 REQUEST_CONNECTING = 1
 IN_CONNECTING = 2
