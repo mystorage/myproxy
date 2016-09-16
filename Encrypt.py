@@ -38,7 +38,7 @@ def getrawdata(data):
     rawdata = b''
     while True:
         datalen = len(data) - obfslen
-        if datalen >= HEAD_DATA_LEN_BYTE and datalen >= Utils.b4ti(data):
+        if datalen >= HEAD_DATA_LEN_BYTE and datalen >= Utils.b4ti(data[obfslen:obfslen+4]):
             hasdata = True
             data = data[obfslen:]
             l = Utils.b4ti(data)
