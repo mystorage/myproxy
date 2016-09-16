@@ -5,7 +5,7 @@ import Globals
 n = b"adslfkwe"
 k = b"adslfkweadslfkweadslfkweadslfkwe"
 
-obfs = b'ehlo [127.0.1.1]\r\n'
+obfs = b'HTTP/1.1 200 OK\r\n'
 obfslen = len(obfs)
 
 HEAD_DATA_LEN_BYTE = 4
